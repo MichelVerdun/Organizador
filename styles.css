@@ -1,0 +1,97 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Calendário */
+.calendar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar {
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+}
+
+.day {
+    flex: 1 1 calc(33% - 20px);
+    background: #fff;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.day h3 {
+    text-align: center;
+    background: #f0f0f0;
+    margin: -10px -10px 10px;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Barra de Progresso */
+.progress-container {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+    border: 1px solid #ddd;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+#progress-fill {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}
+
+#progress-text {
+    text-align: center;
+}

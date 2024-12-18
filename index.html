@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Horários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Organizador de Horários</h1>
+        <nav>
+            <button id="btn-calendar">Calendário</button>
+            <button id="btn-goals">Objetivos</button>
+        </nav>
+    </header>
+
+    <!-- Página Principal -->
+    <div id="calendar-page">
+        <div class="week-navigation">
+            <button id="prev-week">Semana Anterior</button>
+            <span id="current-week">Semana 1</span>
+            <button id="next-week">Próxima Semana</button>
+        </div>
+
+        <div class="calendar-container">
+            <div class="calendar">
+                <div class="day" id="monday">
+                    <h3>Segunda</h3>
+                    <ul id="monday-tasks"></ul>
+                </div>
+                <div class="day" id="tuesday">
+                    <h3>Terça</h3>
+                    <ul id="tuesday-tasks"></ul>
+                </div>
+                <div class="day" id="wednesday">
+                    <h3>Quarta</h3>
+                    <ul id="wednesday-tasks"></ul>
+                </div>
+                <div class="day" id="thursday">
+                    <h3>Quinta</h3>
+                    <ul id="thursday-tasks"></ul>
+                </div>
+                <div class="day" id="friday">
+                    <h3>Sexta</h3>
+                    <ul id="friday-tasks"></ul>
+                </div>
+                <div class="day" id="saturday">
+                    <h3>Sábado</h3>
+                    <ul id="saturday-tasks"></ul>
+                </div>
+                <div class="day" id="sunday">
+                    <h3>Domingo</h3>
+                    <ul id="sunday-tasks"></ul>
+                </div>
+            </div>
+
+            <aside class="progress-container">
+                <h2>Progresso</h2>
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <p id="progress-text">0% Concluído</p>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Página de Objetivos -->
+    <div id="goals-page" style="display: none;">
+        <h2>Objetivos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tarefa</th>
+                    <th>Prazo (Horas)</th>
+                    <th>Status</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="goals-list"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
